@@ -1,30 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sugarpixel</title>
 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    width:100vw;
-    height:100vh;
-    overflow:hidden;
-    background:#000;
+background:#D8FF00;
+height:100vh;
+overflow:hidden;
 }
 
 model-viewer{
-    width:100%;
-    height:100%;
-    --poster-color: transparent;
+width:100vw;
+height:100vh;
 }
 </style>
 </head>
@@ -32,17 +28,11 @@ model-viewer{
 <body>
 
 <model-viewer
-    src="./Sugarpixel_Logo.glb"
-    camera-controls
-    auto-rotate
-    auto-rotate-delay="0"
-    rotation-per-second="12deg"
-    camera-orbit="0deg 75deg 8m"
-    field-of-view="35deg"
-    exposure="1"
-    shadow-intensity="0"
-    interaction-prompt="none"
-    disable-pan>
+src="./Sugarpixel_Logo.glb"
+camera-controls
+auto-rotate
+shadow-intensity="1"
+interaction-prompt="none">
 </model-viewer>
 
 </body>
